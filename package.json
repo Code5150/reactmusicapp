@@ -36,7 +36,7 @@
     "build": "react-scripts build",
     "heroku-postbuild": "npm run build"
   },
-  "proxy": "https://0.0.0.0:5000",
+  "proxy": "https://reactmusicappserver.herokuapp.com",
   "eslintConfig": {
     "extends": "react-app"
   },
