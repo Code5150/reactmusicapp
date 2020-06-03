@@ -29,13 +29,12 @@
     "react-use-storage": "^0.4.2"
   },
   "scripts": {
-    "server": "node backend/server.js",
-    "start": "node backend/server.js & react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://0.0.0.0:5000",
+  "proxy": "https://reactmusicappserver.herokuapp.com",
   "eslintConfig": {
     "extends": "react-app"
   },
