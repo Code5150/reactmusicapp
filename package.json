@@ -19,6 +19,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.9.10",
+    "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-datepicker": "^2.16.0",
@@ -30,12 +31,12 @@
     "serve": "^11.3.1"
   },
   "scripts": {
-    "dev": "react-scripts start",
+    "dev": "nodemon backend/server.js & react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",
     "heroku-postbuild": "npm run build"
   },
-  "proxy": "https://reactmusicappserver.herokuapp.com",
+  "proxy": "https://localhost:5000",
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -50,8 +51,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
   }
 }
