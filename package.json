@@ -31,12 +31,12 @@
     "serve": "^11.3.1"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "heroku-postbuild": "npm run build"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "proxy": "https://deep-delicate-euphonium.glitch.me",
+  "proxy": "https://deep-delicate-euphonium.glitch.me:5000",
   "eslintConfig": {
     "extends": "react-app"
   },
