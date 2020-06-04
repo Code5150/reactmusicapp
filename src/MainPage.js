@@ -25,8 +25,12 @@ function MainPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(Routes.Instr)
-      .then(response => response.json())
+    fetch(Routes.Instr, {
+      mode: 'cors',
+      headers: {
+        'Access-Control-Allow-Origin':'*'
+      }
+    }).then(response => response.json())
       .then(instrList => {
         setInstrList(instrList);
         console.log(instrList);
