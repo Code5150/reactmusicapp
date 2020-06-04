@@ -36,7 +36,7 @@
     "build": "react-scripts build",
     "heroku-postbuild": "npm run build"
   },
-  "proxy": "https://deep-delicate-euphonium.glitch.me:5000",
+  "proxy": "https://reactmusicappserver.herokuapp.com:11660",
   "eslintConfig": {
     "extends": "react-app"
   },
